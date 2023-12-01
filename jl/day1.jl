@@ -29,8 +29,6 @@ repl_dict = Dict(
     "nine" => "9"
 )
 
-tst = "eightwo"
-
 rx2 = r"one|two|three|four|five|six|seven|eight|nine|[0-9]"
 
 function get_digits2(x::String, rx::Regex, o::Bool)
