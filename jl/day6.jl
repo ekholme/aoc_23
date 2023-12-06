@@ -38,8 +38,6 @@ for i in eachindex(t)
     rv[i] = Race(time=t[i], distance=d[i])
 end
 
-solve!(rv[1])
-
 [solve!(rv[i]) for i in eachindex(rv)]
 
 p1 = prod([rv[i].ways for i in eachindex(rv)])
