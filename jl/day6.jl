@@ -45,3 +45,10 @@ solve!(rv[1])
 p1 = prod([rv[i].ways for i in eachindex(rv)])
 
 # p2 -------------------
+
+t2 = parse(Int, reduce(*, [string(i) for i in t]))
+d2 = parse(Int, reduce(*, [string(i) for i in d]))
+
+rr = Race(time=t2, distance=d2)
+
+solve!(rr)
