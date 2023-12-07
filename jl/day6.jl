@@ -1,3 +1,5 @@
+using BenchmarkTools
+
 f = open("./data/day6.txt", "r")
 
 data = readlines(f)
@@ -49,4 +51,4 @@ d2 = parse(Int, reduce(*, [string(i) for i in d]))
 
 rr = Race(time=t2, distance=d2)
 
-solve!(rr)
+@benchmark solve!(rr)
